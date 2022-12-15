@@ -3,6 +3,8 @@ import {Link} from 'react-router-dom';
 import {useTheme, Box, Typography, Button} from '@mui/material';
 import {DataGrid, GridToolbar} from '@mui/x-data-grid';
 
+import Header from '../components/Header';
+
 import {tokens} from '../theme';
 import {mockDataOrders} from '../data/mockTableData';
 
@@ -92,21 +94,31 @@ function Orders() {
 	];
 
 	return (
-		<Box sx={{m: '20px', display: 'flex', flexDirection: 'column'}}>
-			<Button
-				variant={mode === 'dark' ? 'outlined' : 'contained'}
-				color='success'
-				component={Link}
-				to='/newOrder'
+		<Box sx={{m: '20px'}}>
+			{/* Header and New button */}
+			<Box
 				sx={{
-					width: '80px',
-					p: '5px',
-					alignSelf: 'flex-end',
-					color: mode === 'dark' ? colors.greenAccent[400] : colors.primary[100]
+					display: 'flex',
+					flexDirection: 'row',
+					justifyContent: 'space-between',
+					alignItems: 'flex-end'
 				}}
 			>
-				Add New
-			</Button>
+				<Header title='ORDERS' subtitle='Invoices for Purchased Items' />
+				<Button
+					variant={mode === 'dark' ? 'outlined' : 'contained'}
+					color='success'
+					component={Link}
+					to='/newUser'
+					sx={{
+						width: '80px',
+						p: '5px',
+						color: mode === 'dark' ? colors.greenAccent[400] : colors.primary[100]
+					}}
+				>
+					Add New
+				</Button>
+			</Box>
 
 			{/* MUI Table */}
 			<Box

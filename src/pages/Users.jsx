@@ -4,6 +4,8 @@ import {useTheme, Box, Typography, Button} from '@mui/material';
 import {DataGrid, GridToolbar} from '@mui/x-data-grid';
 import {AdminPanelSettingsOutlined, LockOpenOutlined} from '@mui/icons-material';
 
+import Header from '../components/Header';
+
 import {tokens} from '../theme';
 import {mockDataUsers} from '../data/mockTableData';
 
@@ -64,7 +66,7 @@ function Users() {
 							variant={mode === 'dark' ? 'outlined' : 'contained'}
 							color='info'
 							component={Link}
-							to={`/users/${params.row.id}`}
+							to={`/users/${params.row.id}`} // params contains each row's field.
 						>
 							<Typography
 								sx={{
@@ -100,21 +102,31 @@ function Users() {
 	];
 
 	return (
-		<Box sx={{m: '20px', display: 'flex', flexDirection: 'column'}}>
-			<Button
-				variant={mode === 'dark' ? 'outlined' : 'contained'}
-				color='success'
-				component={Link}
-				to='/newUser'
+		<Box sx={{m: '20px'}}>
+			{/* Header and New button */}
+			<Box
 				sx={{
-					width: '80px',
-					p: '5px',
-					alignSelf: 'flex-end',
-					color: mode === 'dark' ? colors.greenAccent[400] : colors.primary[100]
+					display: 'flex',
+					flexDirection: 'row',
+					justifyContent: 'space-between',
+					alignItems: 'flex-end'
 				}}
 			>
-				Add New
-			</Button>
+				<Header title='USERS' subtitle='Manage Administrators and Customers' />
+				<Button
+					variant={mode === 'dark' ? 'outlined' : 'contained'}
+					color='success'
+					component={Link}
+					to='/newUser'
+					sx={{
+						width: '80px',
+						p: '5px',
+						color: mode === 'dark' ? colors.greenAccent[400] : colors.primary[100]
+					}}
+				>
+					Add New
+				</Button>
+			</Box>
 
 			{/* MUI Table */}
 			<Box
