@@ -140,7 +140,13 @@ function Calendar() {
 						},
 						// Current day background color.
 						'& .fc .fc-daygrid-day.fc-day-today': {
-							backgroundColor: colors.purpleAccent[600]
+							backgroundColor: colors.purpleAccent[600],
+							'&:hover': {
+								backgroundColor:
+									mode === 'dark'
+										? colors.purpleAccent[400]
+										: colors.purpleAccent[500]
+							}
 						},
 						// Week and Day tab columns' color.
 						'& .fc .fc-timegrid-col.fc-day-today': {

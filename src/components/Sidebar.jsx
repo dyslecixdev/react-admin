@@ -53,12 +53,12 @@ function Sidebar() {
 					button: ({level, active}) => {
 						if (level === 0)
 							return {
-								color: active ? colors.purpleAccent[700] : colors.greyAccent[100],
+								color: active ? colors.purpleAccent[600] : colors.greyAccent[100],
 								backgroundColor:
 									mode === 'dark' ? colors.primary[600] : colors.secondary[400],
 								'&:hover': {
 									color: active
-										? colors.purpleAccent[600]
+										? colors.purpleAccent[500]
 										: colors.greyAccent[100],
 									backgroundColor:
 										mode === 'dark'
@@ -68,13 +68,13 @@ function Sidebar() {
 							};
 						if (level === 1)
 							return {
-								color: active ? colors.purpleAccent[700] : colors.greyAccent[100],
+								color: active ? colors.purpleAccent[600] : colors.greyAccent[100],
 								backgroundColor:
 									mode === 'dark' ? colors.primary[600] : colors.secondary[400],
 								'&:hover': {
 									color: active
-										? colors.purpleAccent[600]
-										: colors.purpleAccent[500],
+										? colors.purpleAccent[500]
+										: colors.purpleAccent[700],
 									backgroundColor:
 										mode === 'dark'
 											? colors.primary[600]
