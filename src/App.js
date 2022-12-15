@@ -7,7 +7,9 @@ import Users from './pages/Users';
 import SingleUser from './pages/SingleUser';
 import Form from './pages/Form';
 import Products from './pages/Products';
+import SingleProduct from './pages/SingleProduct';
 import Orders from './pages/Orders';
+import SingleOrder from './pages/SingleOrder';
 import Calendar from './pages/Calendar';
 import Kanban from './pages/Kanban';
 import Editor from './pages/Editor';
@@ -41,8 +43,16 @@ function App() {
 								<Route path=':id' element={<SingleUser />} />
 								<Route path='newUser' element={<Form />} />
 							</Route>
-							<Route path='/products' element={<Products />} />
-							<Route path='/orders' element={<Orders />} />
+							<Route path='/products'>
+								<Route index element={<Products />} />
+								<Route path=':id' element={<SingleProduct />} />
+								<Route path='newProduct' element={<Form />} />
+							</Route>
+							<Route path='/orders'>
+								<Route index element={<Orders />} />
+								<Route path=':id' element={<SingleOrder />} />
+								<Route path='newOrder' element={<Form />} />
+							</Route>
 							<Route path='/calendar' element={<Calendar />} />
 							<Route path='/kanban' element={<Kanban />} />
 							<Route path='/editor' element={<Editor />} />
