@@ -17,6 +17,7 @@ import Pie from './pages/Pie';
 import Line from './pages/Line';
 import Geo from './pages/Geo';
 import Sidebar from './components/Sidebar';
+import Navbar from './components/Navbar';
 
 import {ColorModeContext, useMode} from './theme';
 
@@ -32,6 +33,7 @@ function App() {
 				<Box className='app'>
 					<Sidebar />
 					<Box className='content'>
+						<Navbar />
 						<Routes>
 							<Route path='/' element={<Dashboard />} />
 							<Route path='/users'>
