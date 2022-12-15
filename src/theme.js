@@ -18,15 +18,15 @@ const tokens = mode => ({
 					900: '#040509'
 				},
 				secondary: {
-					100: '#fffefe',
-					200: '#fefefd',
-					300: '#fefdfb',
-					400: '#fdfdfa',
-					500: '#fdfcf9',
-					600: '#cacac7',
-					700: '#989795',
-					800: '#656564',
-					900: '#333232'
+					100: '#ffffff',
+					200: '#FEFDFC',
+					300: '#FDFCF9',
+					400: '#FCFAF6',
+					500: '#FBF9F3',
+					600: '#FAF7F0',
+					700: '#F9F6ED',
+					800: '#F7F4EB',
+					900: '#F6F3E8'
 				},
 				redAccent: {
 					100: '#f8dcdb',
@@ -119,15 +119,15 @@ const tokens = mode => ({
 					900: '#d0d1d5'
 				},
 				secondary: {
-					100: '#333232',
-					200: '#656564',
-					300: '#989795',
-					400: '#cacac7',
-					500: '#fdfcf9',
-					600: '#fdfdfa',
-					700: '#fefdfb',
-					800: '#fefefd',
-					900: '#fffefe'
+					100: '#F6F3E8',
+					200: '#F7F4EB',
+					300: '#F9F6ED',
+					400: '#FAF7F0',
+					500: '#FBF9F3',
+					600: '#FCFAF6',
+					700: '#FDFCF9',
+					800: '#FEFDFC',
+					900: '#ffffff'
 				},
 				redAccent: {
 					100: '#2c100f',
@@ -270,7 +270,7 @@ const themeSettings = mode => {
 							light: colors.greyAccent[100]
 						},
 						background: {
-							default: colors.secondary[500]
+							default: colors.secondary[900]
 						}
 				  })
 		},

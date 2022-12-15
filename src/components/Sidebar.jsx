@@ -27,7 +27,8 @@ import {tokens} from '../theme';
 
 function Sidebar() {
 	const theme = useTheme(); // MUI theme object.
-	const colors = tokens(theme.palette.mode); // colors is the color object created depending on if the mode is dark or light.
+	const {mode} = theme.palette; // mode is the current light or dark mode.
+	const colors = tokens(mode); // colors is the color object created depending on if the mode is dark or light.
 
 	const [selected, setSelected] = useState('Dashboard');
 
@@ -36,10 +37,13 @@ function Sidebar() {
 	return (
 		<ProSidebar
 			defaultCollapsed
-			backgroundColor={colors.primary[600]}
+			backgroundColor={mode === 'dark' ? colors.primary[600] : colors.secondary[400]}
 			rootStyles={{
 				margin: '15px 0 15px 15px',
-				border: `1px solid ${colors.primary[600]}`,
+				border:
+					mode === 'dark'
+						? `1px solid ${colors.primary[600]}`
+						: `1px solid ${colors.secondary[400]}`,
 				borderRadius: '5px'
 			}}
 		>
@@ -50,19 +54,27 @@ function Sidebar() {
 						if (level === 0)
 							return {
 								color: active ? colors.blueAccent[600] : colors.greyAccent[100],
-								backgroundColor: colors.primary[600],
+								backgroundColor:
+									mode === 'dark' ? colors.primary[600] : colors.secondary[400],
 								'&:hover': {
 									color: active ? colors.blueAccent[500] : colors.greyAccent[100],
-									backgroundColor: colors.primary[600]
+									backgroundColor:
+										mode === 'dark'
+											? colors.primary[600]
+											: colors.secondary[400]
 								}
 							};
 						if (level === 1)
 							return {
 								color: active ? colors.blueAccent[600] : colors.greyAccent[100],
-								backgroundColor: colors.primary[600],
+								backgroundColor:
+									mode === 'dark' ? colors.primary[600] : colors.secondary[400],
 								'&:hover': {
-									color: active ? colors.blueAccent[500] : colors.blueAccent[300],
-									backgroundColor: colors.primary[600]
+									color: active ? colors.blueAccent[500] : colors.blueAccent[400],
+									backgroundColor:
+										mode === 'dark'
+											? colors.primary[600]
+											: colors.secondary[400]
 								}
 							};
 					}
