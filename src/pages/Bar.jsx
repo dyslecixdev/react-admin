@@ -44,7 +44,7 @@ function Bar() {
 						},
 						legends: {
 							text: {
-								fill: colors.greyAccent[100]
+								fill: colors.redAccent[100]
 							}
 						}
 					}}
@@ -112,13 +112,9 @@ function Bar() {
 						legendPosition: 'middle',
 						legendOffset: -40
 					}}
-					enableLabel={false}
 					labelSkipWidth={5}
 					labelSkipHeight={12}
-					labelTextColor={{
-						from: 'color',
-						modifiers: [['darker', 1.6]]
-					}}
+					labelTextColor={colors.primary[500]}
 					legends={[
 						{
 							dataFrom: 'keys',
