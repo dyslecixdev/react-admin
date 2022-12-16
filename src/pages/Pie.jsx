@@ -71,6 +71,7 @@ function Pie() {
 					arcLinkLabelsColor={{from: 'color'}}
 					arcLabelsSkipAngle={10}
 					arcLabelsTextColor={colors.primary[500]}
+					enableArcLabels={false}
 					defs={[
 						{
 							id: 'dots',

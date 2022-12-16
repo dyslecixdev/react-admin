@@ -119,6 +119,7 @@ function Bar() {
 						legendPosition: 'middle',
 						legendOffset: -40
 					}}
+					enableLabel={false}
 					labelSkipWidth={5}
 					labelSkipHeight={12}
 					labelTextColor={colors.primary[500]}

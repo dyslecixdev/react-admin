@@ -14,8 +14,9 @@ function Line() {
 
 	return (
 		<Box sx={{m: '20px'}}>
-			<Header title='LINE CHART' subtitle="Most Popular Product's Sales (2022)" />
+			<Header title='LINE CHART' subtitle="Most Popular Products' Sales (2022)" />
 
+			{/* Line Chart */}
 			<Box
 				sx={{
 					height: '70vh',
