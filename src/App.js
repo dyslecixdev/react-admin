@@ -5,7 +5,7 @@ import {ThemeProvider, CssBaseline, Box} from '@mui/material';
 import Dashboard from './pages/Dashboard';
 import Users from './pages/Users';
 import SingleUser from './pages/SingleUser';
-import Form from './pages/Form';
+import UserForm from './pages/UserForm';
 import Products from './pages/Products';
 import SingleProduct from './pages/SingleProduct';
 import Orders from './pages/Orders';
@@ -41,17 +41,17 @@ function App() {
 							<Route path='/users'>
 								<Route index element={<Users />} />
 								<Route path=':id' element={<SingleUser />} />
-								<Route path='newUser' element={<Form />} />
+								<Route path='newUser' element={<UserForm />} />
 							</Route>
 							<Route path='/products'>
 								<Route index element={<Products />} />
 								<Route path=':id' element={<SingleProduct />} />
-								<Route path='newProduct' element={<Form />} />
+								<Route path='newProduct' element={<UserForm />} />
 							</Route>
 							<Route path='/orders'>
 								<Route index element={<Orders />} />
 								<Route path=':id' element={<SingleOrder />} />
-								<Route path='newOrder' element={<Form />} />
+								<Route path='newOrder' element={<UserForm />} />
 							</Route>
 							<Route path='/calendar' element={<Calendar />} />
 							<Route path='/kanban' element={<Kanban />} />

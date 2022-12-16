@@ -102,7 +102,7 @@ function Users() {
 	];
 
 	return (
-		<Box sx={{m: '20px'}}>
+		<Box sx={{m: '20px', pb: '20px'}}>
 			{/* Header and New button */}
 			<Box
 				sx={{
