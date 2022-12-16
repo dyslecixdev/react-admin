@@ -61,7 +61,7 @@ function UserForm() {
 
 	return (
 		<Box sx={{m: '20px', pb: '20px'}}>
-			<Header title='PROFILE FORM' subtitle='Create a New User' />
+			<Header title='USER FORM' subtitle='Create a New User' />
 
 			{/* Profile Form */}
 			<Formik
