@@ -83,7 +83,7 @@ function Calendar() {
 	};
 
 	return (
-		<Box sx={{m: '20px'}}>
+		<Box sx={{m: '20px', pb: '20px'}}>
 			<Header title='CALENDAR' subtitle='Edit Your Events' />
 
 			<Box sx={{display: 'flex', justifyContent: 'space-between'}}>
@@ -104,7 +104,16 @@ function Calendar() {
 								key={event.id}
 								sx={{
 									m: '10px 0',
-									backgroundColor: colors.orangeAccent[500],
+									backgroundColor:
+										mode === 'dark' ? 'none' : colors.orangeAccent[600],
+									color:
+										mode === 'dark'
+											? colors.orangeAccent[500]
+											: colors.primary[100],
+									border:
+										mode === 'dark'
+											? `1px dashed ${colors.orangeAccent[500]}`
+											: 'none',
 									borderRadius: '2px'
 								}}
 							>
@@ -182,7 +191,7 @@ function Calendar() {
 							{id: '1234', title: 'All-day event', date: '2022-12-08'},
 							{id: '4321', title: 'Timed event', date: '2022-12-12'}
 						]}
-						eventColor={colors.orangeAccent[600]}
+						eventColor={colors.orangeAccent[700]}
 						eventTextColor={colors.greyAccent[100]}
 					/>
 				</Box>

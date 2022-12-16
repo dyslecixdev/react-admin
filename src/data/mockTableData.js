@@ -191,4 +191,158 @@ const mockDataOrders = [
 	}
 ];
 
-export {mockDataUsers, mockDataProducts, mockDataOrders};
+// Fake order documents for a single user document in MongoDB.
+const mockDataTransaction = [
+	{
+		id: 100,
+		products: [
+			{
+				id: 12,
+				name: 'Christmas Sweater',
+				price: 25.99,
+				size: ['L'],
+				color: ['Red'],
+				quantity: 1
+			}
+		],
+		address: '123 Imaginary Lane, Los Angeles, CA 90001',
+		totalPrice: 25.99
+	},
+	{
+		id: 101,
+		products: [
+			{
+				id: 12,
+				name: 'Christmas Sweater',
+				price: 25.99,
+				size: ['L'],
+				color: ['Red'],
+				quantity: 1
+			}
+		],
+		address: '123 Imaginary Lane, Los Angeles, CA 90001',
+		totalPrice: 25.99
+	},
+	{
+		id: 102,
+		products: [
+			{
+				id: 12,
+				name: 'Christmas Sweater',
+				price: 25.99,
+				size: ['L'],
+				color: ['Red'],
+				quantity: 1
+			}
+		],
+		address: '123 Imaginary Lane, Los Angeles, CA 90001',
+		totalPrice: 25.99
+	},
+	{
+		id: 103,
+		products: [
+			{
+				id: 12,
+				name: 'Christmas Sweater',
+				price: 25.99,
+				size: ['L'],
+				color: ['Red'],
+				quantity: 1
+			}
+		],
+		address: '123 Imaginary Lane, Los Angeles, CA 90001',
+		totalPrice: 25.99
+	},
+	{
+		id: 104,
+		products: [
+			{
+				id: 12,
+				name: 'Christmas Sweater',
+				price: 25.99,
+				size: ['L'],
+				color: ['Red'],
+				quantity: 1
+			}
+		],
+		address: '123 Imaginary Lane, Los Angeles, CA 90001',
+		totalPrice: 25.99
+	},
+	{
+		id: 105,
+		products: [
+			{
+				id: 12,
+				name: 'Christmas Sweater',
+				price: 25.99,
+				size: ['L'],
+				color: ['Red'],
+				quantity: 1
+			}
+		],
+		address: '123 Imaginary Lane, Los Angeles, CA 90001',
+		totalPrice: 25.99
+	},
+	{
+		id: 106,
+		products: [
+			{
+				id: 12,
+				name: 'Christmas Sweater',
+				price: 25.99,
+				size: ['L'],
+				color: ['Red'],
+				quantity: 1
+			}
+		],
+		address: '123 Imaginary Lane, Los Angeles, CA 90001',
+		totalPrice: 25.99
+	},
+	{
+		id: 107,
+		products: [
+			{
+				id: 12,
+				name: 'Christmas Sweater',
+				price: 25.99,
+				size: ['L'],
+				color: ['Red'],
+				quantity: 1
+			}
+		],
+		address: '123 Imaginary Lane, Los Angeles, CA 90001',
+		totalPrice: 25.99
+	},
+	{
+		id: 108,
+		products: [
+			{
+				id: 12,
+				name: 'Christmas Sweater',
+				price: 25.99,
+				size: ['L'],
+				color: ['Red'],
+				quantity: 1
+			}
+		],
+		address: '123 Imaginary Lane, Los Angeles, CA 90001',
+		totalPrice: 25.99
+	},
+	{
+		id: 109,
+		products: [
+			{
+				id: 12,
+				name: 'Christmas Sweater',
+				price: 25.99,
+				size: ['L'],
+				color: ['Red'],
+				quantity: 1
+			}
+		],
+		address: '123 Imaginary Lane, Los Angeles, CA 90001',
+		totalPrice: 25.99
+	}
+];
+
+export {mockDataUsers, mockDataProducts, mockDataOrders, mockDataTransaction};

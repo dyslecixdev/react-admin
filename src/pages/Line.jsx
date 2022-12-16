@@ -22,6 +22,7 @@ function Line() {
 					height: '70vh',
 					backgroundColor: mode === 'light' && colors.secondary[300],
 					color: colors.primary[500],
+					boxShadow: mode === 'light' && `1px 1px 3px 1px ${colors.greyAccent[400]}`,
 					borderRadius: '5px'
 				}}
 			>

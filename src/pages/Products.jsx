@@ -117,7 +117,7 @@ function Products() {
 					variant={mode === 'dark' ? 'outlined' : 'contained'}
 					color='success'
 					component={Link}
-					to='/newUser'
+					to='/users/newUser'
 					sx={{
 						width: '80px',
 						p: '5px',

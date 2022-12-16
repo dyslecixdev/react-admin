@@ -22,9 +22,9 @@ function Users() {
 	// Creates the column headers in the MUI Table.
 	const columns = [
 		// cellClassName gives this column a class name.
-		{field: 'id', headerName: 'ID', flex: 1},
+		{field: 'id', headerName: 'ID', cellClassName: 'green-column', flex: 1},
 		{field: 'firstName', headerName: 'First Name', flex: 2},
-		{field: 'lastName', headerName: 'Last Name', flex: 2},
+		{field: 'lastName', headerName: 'Last Name', cellClassName: 'green-column', flex: 2},
 		{field: 'email', headerName: 'Email', flex: 2},
 		{
 			field: 'isAdmin',
@@ -112,12 +112,12 @@ function Users() {
 					alignItems: 'flex-end'
 				}}
 			>
-				<Header title='USERS' subtitle='Manage Administrators and Customers' />
+				<Header title='USERS' subtitle='Manage Employees and Customers' />
 				<Button
 					variant={mode === 'dark' ? 'outlined' : 'contained'}
 					color='success'
 					component={Link}
-					to='/newUser'
+					to='/users/newUser'
 					sx={{
 						width: '80px',
 						p: '5px',
@@ -143,6 +143,10 @@ function Users() {
 					'& .MuiDataGrid-columnHeaders': {
 						backgroundColor: colors.purpleAccent[800],
 						borderBottom: 'none'
+					},
+					// Every other column's text color.
+					'& .green-column': {
+						color: colors.greenAccent[300]
 					},
 					// Checkbox color.
 					'& .MuiCheckbox-root.Mui-checked': {

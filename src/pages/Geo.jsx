@@ -21,8 +21,10 @@ function Geo() {
 			<Box
 				sx={{
 					height: '70vh',
+					backgroundColor: mode === 'light' && colors.secondary[300],
 					color: colors.primary[500],
-					border: `1px solid ${colors.greyAccent[100]}`,
+					boxShadow: mode === 'light' && `1px 1px 3px 1px ${colors.greyAccent[400]}`,
+					border: mode === 'dark' ? `1px solid ${colors.greyAccent[100]}` : 'none',
 					borderRadius: '5px'
 				}}
 			>

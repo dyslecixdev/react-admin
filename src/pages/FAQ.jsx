@@ -18,7 +18,7 @@ function FAQ() {
 	const colors = tokens(mode);
 
 	return (
-		<Box sx={{m: '20px'}}>
+		<Box sx={{m: '20px', pb: '20px'}}>
 			<Header title='FAQ' subtitle='Frequently Asked Questions' />
 
 			{/* Accordion Questions */}

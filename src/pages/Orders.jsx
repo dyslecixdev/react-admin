@@ -109,7 +109,7 @@ function Orders() {
 					variant={mode === 'dark' ? 'outlined' : 'contained'}
 					color='success'
 					component={Link}
-					to='/newUser'
+					to='/users/newUser'
 					sx={{
 						width: '80px',
 						p: '5px',
@@ -133,7 +133,6 @@ function Orders() {
 						backgroundColor: colors.purpleAccent[800],
 						borderBottom: 'none'
 					},
-					// Every other column's text color.
 					'& .green-column': {
 						color: colors.greenAccent[300]
 					},
