@@ -33,7 +33,7 @@ function FAQ() {
 					<Typography variant='h5'>Important Question #1</Typography>
 				</AccordionSummary>
 				<AccordionDetails>
-					<Typography sx={{color: colors.orangeAccent[400]}}>
+					<Typography sx={{color: colors.greenAccent[400]}}>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo eius ipsam
 						sapiente aliquam doloribus tempora ratione nobis. Nobis aliquam sint
 						corporis veritatis ducimus eos, laborum quasi dolorum numquam magni, tempora
@@ -55,7 +55,7 @@ function FAQ() {
 					<Typography variant='h5'>Important Question #2</Typography>
 				</AccordionSummary>
 				<AccordionDetails>
-					<Typography sx={{color: colors.orangeAccent[400]}}>
+					<Typography sx={{color: colors.greenAccent[400]}}>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo eius ipsam
 						sapiente aliquam doloribus tempora ratione nobis. Nobis aliquam sint
 						corporis veritatis ducimus eos, laborum quasi dolorum numquam magni, tempora
@@ -76,7 +76,7 @@ function FAQ() {
 					<Typography variant='h5'>Important Question #3</Typography>
 				</AccordionSummary>
 				<AccordionDetails>
-					<Typography sx={{color: colors.orangeAccent[400]}}>
+					<Typography sx={{color: colors.greenAccent[400]}}>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo eius ipsam
 						sapiente aliquam doloribus tempora ratione nobis. Nobis aliquam sint
 						corporis veritatis ducimus eos, laborum quasi dolorum numquam magni, tempora
@@ -97,7 +97,7 @@ function FAQ() {
 					<Typography variant='h5'>Important Question #4</Typography>
 				</AccordionSummary>
 				<AccordionDetails>
-					<Typography sx={{color: colors.orangeAccent[400]}}>
+					<Typography sx={{color: colors.greenAccent[400]}}>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo eius ipsam
 						sapiente aliquam doloribus tempora ratione nobis. Nobis aliquam sint
 						corporis veritatis ducimus eos, laborum quasi dolorum numquam magni, tempora

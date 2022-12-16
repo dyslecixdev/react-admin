@@ -1,3 +1,4 @@
+// Fake user documents from MongoDB.
 const mockDataUsers = [
 	{
 		id: 1,
@@ -43,6 +44,7 @@ const mockDataUsers = [
 	}
 ];
 
+// Fake product documents from MongoDB.
 const mockDataProducts = [
 	{
 		id: 1,
@@ -145,6 +147,7 @@ const mockDataProducts = [
 	}
 ];
 
+// Fake order documents from MongoDB.
 const mockDataOrders = [
 	{
 		id: 1,
