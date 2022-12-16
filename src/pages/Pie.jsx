@@ -14,10 +14,17 @@ function Pie() {
 
 	return (
 		<Box sx={{m: '20px'}}>
-			<Header title='PIE CHART' subtitle="Each Product's Sales Across the US" />
+			<Header title='PIE CHART' subtitle='Product Sales Across the US' />
 
 			{/* Pie Chart */}
-			<Box sx={{height: '75vh'}}>
+			<Box
+				sx={{
+					height: '70vh',
+					backgroundColor: mode === 'light' && colors.secondary[300],
+					color: colors.primary[500],
+					borderRadius: '5px'
+				}}
+			>
 				<ResponsivePie
 					data={mockPieData}
 					theme={{

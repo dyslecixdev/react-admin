@@ -17,7 +17,14 @@ function Bar() {
 			<Header title='BAR CHART' subtitle='Product Sales By State' />
 
 			{/* Bar Chart */}
-			<Box sx={{height: '70vh'}}>
+			<Box
+				sx={{
+					height: '70vh',
+					backgroundColor: mode === 'light' && colors.secondary[300],
+					color: colors.primary[500],
+					borderRadius: '5px'
+				}}
+			>
 				<ResponsiveBar
 					data={mockBarData}
 					theme={{
