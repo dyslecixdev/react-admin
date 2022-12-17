@@ -13,7 +13,7 @@ function Pie() {
 	const colors = tokens(mode);
 
 	return (
-		<Box sx={{m: '20px'}}>
+		<Box sx={{m: '20px', pb: '20px'}}>
 			<Header title='PIE CHART' subtitle='Product Sales Across the US' />
 
 			{/* Pie Chart */}

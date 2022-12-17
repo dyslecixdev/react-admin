@@ -14,7 +14,7 @@ function Geo() {
 	const colors = tokens(mode);
 
 	return (
-		<Box sx={{m: '20px'}}>
+		<Box sx={{m: '20px', pb: '20px'}}>
 			<Header title='GEOGRAPHY CHART' subtitle='Product Sales Across the World' />
 
 			{/* Geo Chart */}

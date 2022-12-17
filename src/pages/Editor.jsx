@@ -22,7 +22,7 @@ function Editor() {
 	const [content, setContent] = useState('Feel free to edit this text.');
 
 	return (
-		<Box sx={{m: '20px'}}>
+		<Box sx={{m: '20px', pb: '20px'}}>
 			<Header title='EDITOR' subtitle='Write Text Easily' />
 
 			{/* Editor */}

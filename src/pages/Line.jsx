@@ -13,7 +13,7 @@ function Line() {
 	const colors = tokens(mode);
 
 	return (
-		<Box sx={{m: '20px'}}>
+		<Box sx={{m: '20px', pb: '20px'}}>
 			<Header title='LINE CHART' subtitle="Most Popular Products' Sales (2022)" />
 
 			{/* Line Chart */}
