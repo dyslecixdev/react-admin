@@ -225,7 +225,7 @@ function SingleProduct() {
 							color: mode === 'dark' ? colors.secondary[100] : colors.primary[100]
 						}}
 					>
-						Purchases (Last 6 months)
+						Sales (Last 6 months)
 					</Typography>
 					<ResponsiveContainer width='100%' height='100%' aspect={3 / 1}>
 						<AreaChart

@@ -95,30 +95,8 @@ function Orders() {
 
 	return (
 		<Box sx={{m: '20px', pb: '20px'}}>
-			{/* Header and New button */}
-			<Box
-				sx={{
-					display: 'flex',
-					flexDirection: 'row',
-					justifyContent: 'space-between',
-					alignItems: 'flex-end'
-				}}
-			>
-				<Header title='ORDERS' subtitle='Invoices for Purchased Items' />
-				<Button
-					variant={mode === 'dark' ? 'outlined' : 'contained'}
-					color='success'
-					component={Link}
-					to='/users/newUser'
-					sx={{
-						width: '80px',
-						p: '5px',
-						color: mode === 'dark' ? colors.greenAccent[400] : colors.primary[100]
-					}}
-				>
-					Add New
-				</Button>
-			</Box>
+			{/* Header */}
+			<Header title='ORDERS' subtitle='Invoices for Purchased Items' />
 
 			{/* MUI Table */}
 			<Box
