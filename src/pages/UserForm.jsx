@@ -134,7 +134,7 @@ function UserForm() {
 							<TextField
 								fullWidth
 								variant='filled'
-								type='confirmPassword'
+								type='password'
 								label='Confirm Password'
 								onBlur={handleBlur}
 								onChange={handleChange}

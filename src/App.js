@@ -8,6 +8,7 @@ import SingleUser from './pages/SingleUser';
 import UserForm from './pages/UserForm';
 import Products from './pages/Products';
 import SingleProduct from './pages/SingleProduct';
+import ProductForm from './pages/ProductForm';
 import Orders from './pages/Orders';
 import SingleOrder from './pages/SingleOrder';
 import Calendar from './pages/Calendar';
@@ -46,12 +47,11 @@ function App() {
 							<Route path='/products'>
 								<Route index element={<Products />} />
 								<Route path=':id' element={<SingleProduct />} />
-								<Route path='newProduct' element={<UserForm />} />
+								<Route path='newProduct' element={<ProductForm />} />
 							</Route>
 							<Route path='/orders'>
 								<Route index element={<Orders />} />
 								<Route path=':id' element={<SingleOrder />} />
-								<Route path='newOrder' element={<UserForm />} />
 							</Route>
 							<Route path='/calendar' element={<Calendar />} />
 							<Route path='/kanban' element={<Kanban />} />
