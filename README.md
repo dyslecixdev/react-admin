@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# React Admin Dashboard
+An administrator dashboard for any MERN full-stack application, but currently set specifically for e-commerce applications.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![react-admin](https://user-images.githubusercontent.com/85912934/208585613-58ee59cb-5cf6-4a9c-b0d2-62a18e0e159d.png)
 
-## Available Scripts
+The project was built with JavaScript, Prettier to make the code easier 
+to read, Eslint (Airbnb and Prettier configurations) to find problems in the code, Material-UI with Emotion for styling, Material-UI Data Grid for table UI and functionality, dnd-kit for the Kanban board's dragging and dropping functionality, FullCalendar for the calendar UI and functionality, Nivo and Recharts for respective chart UI and functionality, Formik and Yup for form validations, Jodit for the text editor UI and functionality, react-circular-progressbar for the Dashboard's progress bar, react-pro-sidebar for the sidebar, and Google Fonts.
 
-In the project directory, you can run:
+## How to run this project
+1. Open your terminal and type: git clone https://github.com/christiandeandemesa/react-admin.git
+2. To download the dependencies, cd into the react-admin folder and type: npm install
+3. Run this project by typing: npm run dev
 
-### `npm start`
+## Features
+- User can view dummy data related to a faux e-commerce application in the Dashboard.
+- User can navigate the application using the expandable sidebar.
+- User can switch between day and night mode.
+- User can view dummy data related to current users (viz. administrators and customers), products, and orders.
+- User can view a dummy overview for any specific user, product, or order.
+- User can view a form for creating new users and products.
+- User can create, edit, and delete events on the calendar.
+- User can create, move, and delete cards on the Kanban board.
+- User can edit text in the text editor.
+- User can view a list of dummy FAQs.
+- User can view various charts displaying dummy data.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Upcoming Features
+- Responsive web design for smaller viewports.
+- Cross browser support for Chrome, Firefox, Opera, and Safari.
+- User can reorder the cards in any lane on the Kanban board.
 
-### `npm test`
+## Bugs
+- There is currently an unresolved [issue](https://github.com/jodit/jodit-react/issues/217) on the text editor where the cursor will randomly jump to the beginning of the first line.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## [Admin Dashboard Demo](https://christian-demesa-react-admin.netlify.app/)
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Author
+- Christian Demesa: https://github.com/christiandeandemesa
