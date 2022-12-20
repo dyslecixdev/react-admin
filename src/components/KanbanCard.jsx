@@ -8,29 +8,30 @@ import PropTypes from 'prop-types';
 
 import {tokens} from '../theme';
 
+// title is the card's title, index is its unique index, and parent is its current lane.
 function KanbanCard({title, index, parent}) {
 	const theme = useTheme();
 	const {mode} = theme.palette;
 	const colors = tokens(mode);
 
 	const {attributes, listeners, setNodeRef, transform} = useDraggable({
-		id: title,
+		id: title, // Every draggable node must have a unique id.
 		data: {
 			title,
 			index,
 			parent
-		}
+		} // data is used for event handlers (viz. useDraggable()).
 	});
 
 	const style = {
-		transform: CSS.Translate.toString(transform)
+		transform: CSS.Translate.toString(transform) // The .toString(transform) is an object that holds the draggable node's position and values.
 	};
 
 	return (
 		<Box
-			{...listeners}
-			{...attributes}
-			ref={setNodeRef}
+			{...listeners} // Event handlers.
+			{...attributes} // Draggable node's accessibility.
+			ref={setNodeRef} // Function to keep track of the draggable node.
 			sx={{
 				m: '5px',
 				backgroundColor: 'white',

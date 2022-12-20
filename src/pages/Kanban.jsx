@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import {useState} from 'react';
 
 import {useTheme, Box} from '@mui/material';
@@ -21,23 +20,27 @@ function Kanban() {
 	const [inProgressItems, setInProgressItems] = useState([]);
 	const [uItems, setuItems] = useState([]);
 
+	// Creates a card with a title, and places it in the Unassigned lane.
 	const addNewCard = title => {
-		setuItems([...uItems, {title}]);
+		if (title) setuItems([...uItems, {title}]);
 	};
 
 	return (
 		<Box sx={{m: '20px', pb: '20px'}}>
 			<Header title='KANBAN' subtitle='Track Your Progress' />
 
+			{/* Kanban Board */}
 			<DndContext
-				collisionDetection={rectIntersection}
+				collisionDetection={rectIntersection} // Detects collisions between draggable and droppable nodes.
+				// Event handler that...
 				onDragEnd={e => {
 					const container = e.over?.id;
 					const title = e.active.data.current?.title ?? '';
 					const index = e.active.data.current?.index ?? 0;
-					const parent = e.active.data.current?.parent ?? 'ToDo';
+					const parent = e.active.data.current?.parent ?? 'To Do';
 
-					if (container === 'ToDo') {
+					// Removes the card from the lane it was dragged out of.
+					if (container === 'To Do') {
 						setTodoItems([...todoItems, {title}]);
 					} else if (container === 'Done') {
 						setDoneItems([...doneItems, {title}]);
@@ -47,7 +50,8 @@ function Kanban() {
 						setInProgressItems([...inProgressItems, {title}]);
 					}
 
-					if (parent === 'ToDo') {
+					// Adds the card to the lane it was dropped into.
+					if (parent === 'To Do') {
 						setTodoItems([...todoItems.slice(0, index), ...todoItems.slice(index + 1)]);
 					} else if (parent === 'Done') {
 						setDoneItems([...doneItems.slice(0, index), ...doneItems.slice(index + 1)]);
@@ -64,17 +68,17 @@ function Kanban() {
 				<Box sx={{display: 'flex', flexDirection: 'column'}}>
 					<AddCard addCard={addNewCard} mode={mode} />
 					<Box sx={{display: 'flex', justifyContent: 'space-between', gap: '30px'}}>
-						<KanbanLane title='To Do' items={todoItems} color={colors.redAccent[400]} />
+						<KanbanLane title='To Do' items={todoItems} color={colors.redAccent[600]} />
 						<KanbanLane
 							title='In Progress'
 							items={inProgressItems}
-							color={colors.orangeAccent[400]}
+							color={colors.orangeAccent[600]}
 						/>
-						<KanbanLane title='Done' items={doneItems} color={colors.blueAccent[400]} />
+						<KanbanLane title='Done' items={doneItems} color={colors.blueAccent[600]} />
 						<KanbanLane
 							title='Unassigned'
 							items={uItems}
-							color={colors.purpleAccent[400]}
+							color={colors.purpleAccent[600]}
 						/>
 					</Box>
 				</Box>

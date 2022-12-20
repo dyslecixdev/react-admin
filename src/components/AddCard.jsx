@@ -7,6 +7,7 @@ import PropTypes from 'prop-types';
 function AddCard({addCard, mode}) {
 	const [title, setTitle] = useState('');
 
+	// Resets the input, and creates a card with the title.
 	const handleClick = () => {
 		setTitle('');
 		addCard(title);
