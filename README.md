@@ -3,13 +3,13 @@ An administrator dashboard for any MERN full-stack application, but currently se
 
 ![react-admin](https://user-images.githubusercontent.com/85912934/208585613-58ee59cb-5cf6-4a9c-b0d2-62a18e0e159d.png)
 
-The project was built with JavaScript, Prettier to make the code easier 
-to read, Eslint (Airbnb and Prettier configurations) to find problems in the code, Material-UI with Emotion for styling, Material-UI Data Grid for table UI and functionality, dnd-kit for the Kanban board's dragging and dropping functionality, FullCalendar for the calendar UI and functionality, Nivo and Recharts for respective chart UI and functionality, Formik and Yup for form validations, Jodit for the text editor UI and functionality, react-circular-progressbar for the Dashboard's progress bar, react-pro-sidebar for the sidebar, and Google Fonts.
+The project was built with javascript, prettier to make the code easier 
+to read, eslint (Airbnb and Prettier configurations) to find problems in the code, Material-UI with Emotion for styling, Material-UI Data Grid for table UI and functionality, dnd-kit for the kanban board's dragging and dropping functionality, FullCalendar for the calendar UI and functionality, nivo and recharts for respective chart UI and functionality, formik and yup for form validations, jodit for the text editor UI and functionality, react-circular-progressbar for the Dashboard's progress bar, react-pro-sidebar for the sidebar, and Google Fonts.
 
 ## How to run this project
-1. Open your terminal and type: git clone https://github.com/christiandeandemesa/react-admin.git
-2. To download the dependencies, cd into the react-admin folder and type: npm install
-3. Run this project by typing: npm run dev
+1. Open your terminal and type git clone https://github.com/christiandeandemesa/react-admin.git
+2. To download the dependencies, cd into the react-admin folder and type npm install
+3. Run this project by typing npm start.
 
 ## Features
 - User can view dummy data related to a faux e-commerce application in the Dashboard.
@@ -24,16 +24,12 @@ to read, Eslint (Airbnb and Prettier configurations) to find problems in the cod
 - User can view a list of dummy FAQs.
 - User can view various charts displaying dummy data.
 
-
 ## Upcoming Features
 - Responsive web design for smaller viewports.
 - Cross browser support for Chrome, Firefox, Opera, and Safari.
 - User can reorder the cards in any lane on the Kanban board.
 
-## Bugs
-- There is currently an unresolved [issue](https://github.com/jodit/jodit-react/issues/217) on the text editor where the cursor will randomly jump to the beginning of the first line.
-
-## [Admin Dashboard Demo](https://christian-demesa-react-admin.netlify.app/)
+## [React Admin Dashboard Demo](https://christian-demesa-react-admin.netlify.app/)
 
 ## Author
 - Christian Demesa: https://github.com/christiandeandemesa
