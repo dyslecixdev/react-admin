@@ -1,7 +1,7 @@
 # React Admin Dashboard
 An administrator dashboard for any MERN full-stack application, but currently set specifically for e-commerce applications.
 
-![react-admin](https://user-images.githubusercontent.com/85912934/208585613-58ee59cb-5cf6-4a9c-b0d2-62a18e0e159d.png)
+![react-admin](https://user-images.githubusercontent.com/85912934/214942158-802f2b16-0073-4ab6-8c81-fe221766d109.png)
 
 The project was built with javascript, prettier to make the code easier 
 to read, eslint (Airbnb and Prettier configurations) to find problems in the code, Material-UI with Emotion for styling, Material-UI Data Grid for table UI and functionality, dnd-kit for the kanban board's dragging and dropping functionality, FullCalendar for the calendar UI and functionality, nivo and recharts for respective chart UI and functionality, formik and yup for form validations, jodit for the text editor UI and functionality, react-circular-progressbar for the Dashboard's progress bar, react-pro-sidebar for the sidebar, and Google Fonts.
